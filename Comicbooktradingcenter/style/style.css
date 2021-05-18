@@ -23,10 +23,11 @@
     background-color: #243B53;
     text-decoration: none;
     margin: 9px;
-    width: 144px;
-    height: 57px;
+    width: 83px;
+    height: 31px;
     border-radius: 1000px;
-    font-size: 27px;
+    font-size: 16px;
+    margin-top: 0;
   }
 
   #login-button:hover{
@@ -73,6 +74,7 @@
   
   .change .bar{
     background-color: #000000;
+    
   }
   
   .change #bar1{
@@ -87,11 +89,19 @@
     opacity: 0;
   }
   
+
+  #phone-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   .nav a{
     list-style: none;
     padding: 16px 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
     color: black;
@@ -102,6 +112,7 @@
     text-decoration: none;
     font-size: 22px;
     font-family: 'Oswald', sans-serif;
+
   }
   
   .nav li a:hover{
@@ -158,9 +169,15 @@
   
   @media only screen and (min-width: 730px){
 
+    #login-button{
+      margin: 13.5px;
+      width: 144px;
+    height: 57px;
+    border-radius: 1000px;
+    font-size: 27px;
+    }
     /* navigator start */
 
-    #login-button
 
     #container-animate{
         display: initial;
@@ -192,7 +209,7 @@
     }
     
     #container:hover {
-      transform: translateY(0);
+      transform: translateY(10px);
     }
     
     .center {
@@ -204,13 +221,14 @@
     }
     
     #balk {
-      width: 576px;
-      height: 54px;
+      width: 810px;
+      height: 94px;
       background-color: #243B53;
       border-radius: 1000px;
       color: white;
       position: fixed;
-      transform: translateY(36px);
+      transform: translateY(45px);
+      margin-left: 144px;
     }
     
     #nav-text {
@@ -218,6 +236,7 @@
       align-items: center;
       gap: 36px;
       overflow: hidden;
+      font-size: 27px;
     }
     
     #nav-text li {
@@ -231,18 +250,19 @@
       background-color: #627D9B;
       padding: 9px 18px;
       border-radius: 1000px;
+      
     }
     
     .bol-outer {
-      transform: translateY(-25px);
+      transform: translateY(-30px);
       text-decoration: none;
       list-style-type: none;
     }
     
     #bol-inner {
       background-color: #243B53;
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       border-radius: 1000px;
       box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     }
@@ -265,7 +285,7 @@
     }
     
     .balk-active {
-      transform: translateY(-75px);
+      transform: translateY(-100px);
       position: sticky;
       top: 0;
       display: flex;
@@ -289,7 +309,50 @@
         transform: translateY(-144px);
       }
       to {
-        transform: translateY(-25);
+        transform: translateY(-30px);
       }
       /* navigator end */
     }
+
+
+    @media only screen and (max-width: 1110px){
+
+      .balk-active {
+        transform: translateY(-80px);
+      }
+      #balk{
+        width: 441px;
+        height: 64px;
+      }
+
+      #bol-inner{
+        height: 100px;
+        width: 100px;
+      }
+
+      #nav-text{
+        font-size: 16px;
+      }
+      .bol-outer {
+          transform: translateY(-20px);
+      }
+
+      /* login button start */
+      #login-button{
+        font-size: 18px;
+        width: 126px;
+        height: 45px;
+      }
+      /* login button end */
+
+
+
+      @keyframes text {
+        from {
+          transform: translateY(-144px);
+        }
+        to {
+          transform: translateY(-20px);
+        }
+    }
+  }
