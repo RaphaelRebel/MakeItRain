@@ -173,6 +173,7 @@ submit {
   z-index: -1;
   display: table-cell;
   vertical-align: middle;
+  margin-bottom: 36px;
 }
 #header-container {
   display: flex;
@@ -182,7 +183,7 @@ submit {
   width: 100%;
   top: 90px;
   position: absolute;
-  gap: 96px;
+  
 }
 
 /* title end */
@@ -193,7 +194,7 @@ submit {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 36px;
+  
   z-index: -1;
 }
 .BST-button {
@@ -208,7 +209,8 @@ submit {
   height: 63px;
   border-radius: 23px;
   font-size: 27px;
-  margin-top: -10px;
+  margin-top: 36px;
+
 }
 /* BST end */
 
