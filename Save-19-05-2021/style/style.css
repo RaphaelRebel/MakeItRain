@@ -28,13 +28,12 @@ html {
   color: #f1f1f1;
   background-color: #243b53;
   text-decoration: none;
-  margin-top: -63px;
+  margin: 9px;
   width: 83px;
   height: 31px;
   border-radius: 1000px;
   font-size: 16px;
-  
-  margin-right: 18px;
+  margin-top: -10px;
 }
 
 #login-button:hover {
@@ -61,9 +60,6 @@ submit {
 #phone-nav {
   background: #243b53;
   z-index: 1;
-  position: absolute;
-  width: 100%;
-  
 }
 
 .bar {
@@ -185,6 +181,8 @@ submit {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  top: 90px;
+  position: absolute;
   
 }
 
@@ -240,7 +238,9 @@ submit {
 /* line code end */
 
 /* comic grid start */
-
+.link-comic {
+  margin-top: 258px;
+}
 
 .grid-container {
   gap: 17px;
@@ -286,12 +286,11 @@ submit {
 /* links end */
 
 @media only screen and (min-width: 730px) {
-  #container{
+  .right {
     display: flex;
-    justify-content: center;
-    
+    justify-content: flex-end;
   }
-  
+
   /* line code start */
   .link-comic {
     margin-top: 789px;
@@ -320,7 +319,9 @@ submit {
   /* grid comic container end */
 
   /* title start */
-  
+  #header-container {
+    top: 316px;
+  }
   #header-container h1 {
     font-size: 144px;
   }
@@ -379,7 +380,7 @@ submit {
     color: white;
     position: fixed;
     transform: translateY(45px);
-    
+    margin-left: 144px;
   }
 
   #nav-text {
@@ -513,7 +514,17 @@ submit {
   }
 }
 
+/* Safari only */
 
+
+
+@media not all and (min-resolution:.001dpcm){
+  @supports (-webkit-appearance:none){
+    #container-animate{
+      top: 0;
+      position: sticky;
+    }
+  }
 }
 
 
