@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
+  
 }
 
 html {
@@ -13,12 +14,15 @@ html {
   padding: 0;
   background: #334e68;
   /* height: 10000px; */
+  
 }
 
-.right {
+.right{
   display: flex;
   justify-content: center;
 }
+
+
 
 /* login start */
 #login-button {
@@ -34,7 +38,6 @@ html {
   height: 31px;
   border-radius: 1000px;
   font-size: 16px;
-  
   margin-right: 18px;
 }
 
@@ -195,7 +198,6 @@ submit {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
   z-index: -1;
 }
 .BST-button {
@@ -210,7 +212,7 @@ submit {
   height: 63px;
   border-radius: 23px;
   font-size: 27px;
-  margin-top: 36px;
+  
 
 }
 /* BST end */
@@ -229,11 +231,7 @@ submit {
 #line-header {
   height: 9px;
   width: 79%;
-  /* margin-top: 258px; */
-  /* top: 789px;
-    position: absolute; */
   border-radius: 9px;
-  position: absolute;
   bottom: 0;
 }
 
@@ -246,8 +244,7 @@ submit {
   gap: 17px;
   display: grid;
   grid-template-columns: 151px 151px;
-  /* margin-top: 258px; */
-  margin-right: 18px;
+  margin-top: 450px;
 }
 
 .grid-comic {
@@ -263,11 +260,12 @@ submit {
 }
 
 #body-apart {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   display: grid;
-  gap: 9px;
-
-  grid-template-rows: 10px 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr ;
+  grid-template-rows:  1fr;
 }
 /* comic grid end */
 
@@ -285,17 +283,31 @@ submit {
 }
 /* links end */
 
+#overview{
+  display: none;
+}
+#overview p{
+  padding: 9px;
+  border-bottom: solid 1px black;
+}
+
+.loadmore a{
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  
+  color: #f1f1f1;
+}
+
 @media only screen and (min-width: 730px) {
-  #container{
+  #container-nav{
     display: flex;
     justify-content: center;
     
   }
   
   /* line code start */
-  .link-comic {
-    margin-top: 789px;
-  }
+  
 
 
 
@@ -303,11 +315,32 @@ submit {
 
   /* grid comic container start */
   .grid-container {
-    gap: 17px;
     display: grid;
     grid-template-columns: 270px 270px 270px;
-    /* margin-top: 258px; */
+    grid-row-start: 2;
+    grid-template-columns: 2;
+    margin: 0;
+  }
+
+
+
+  .right{
+    margin-top: 550px;
+    display: grid;
+    grid-template-columns: 350px 500px;
+    margin-left: 9px;
+    justify-content: initial;
+  }
+
+  #overview{
+    width: 274px;
+    height: 420px;
+    background-color: #243B53;
     margin-right: 18px;
+    border-radius: 9px;
+    padding: 9px;
+    grid-row-start: 2;
+    display: initial;
   }
 
   .grid-comic{
@@ -344,13 +377,9 @@ submit {
     display: none;
     animation-name: example;
     animation-duration: 2s;
-    
-    
   }
   
-  body {
-    height: 100%;
-  }
+  
 
   
 
@@ -437,7 +466,7 @@ submit {
   }
 
   .balk-active {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
     position: sticky;
     top: 0;
     display: flex;
