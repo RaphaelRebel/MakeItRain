@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  
+  color: #f1f1f1;
 }
 
 html {
@@ -15,6 +15,10 @@ html {
   background: #334e68;
   /* height: 10000px; */
   
+}
+
+a{
+  text-decoration: none;
 }
 
 .right{
@@ -286,7 +290,7 @@ submit {
 /* comic grid end */
 
 /* links start */
-#links ul li {
+/* #links ul li {
   color: #f1f1f1;
   text-decoration: none;
   list-style-type: none;
@@ -297,15 +301,23 @@ submit {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
-}
+} */
 /* links end */
+
+/* page name start */
+
+#page{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  font-size: 45px;
+  color: #f1f1f1;
+}
+
+/* page name end */
 
 #overview{
   display: none;
-}
-#overview p{
-  
-  border-bottom: solid 1px black;
 }
 
 .loadmore a{
@@ -323,6 +335,27 @@ submit {
     
   }
   
+/* overview start */
+
+  #overview p{
+    color: #f1f1f1;
+    border-bottom: solid 1px black;
+    font-size: 27px;
+  }
+  
+  #overview a{
+    color: #f1f1f1;
+    display: flex;
+    padding: 9px;
+    font-size: 27px;
+  }
+
+  /* overview end */
+
+  /* links start */
+  
+  /* links end */
+  
   /* line code start */
   
 
@@ -337,6 +370,7 @@ submit {
     grid-row-start: 2;
     grid-template-columns: 2;
     margin: 0;
+    margin-top: 36px;
   }
 
 
@@ -358,6 +392,7 @@ submit {
     padding: 9px;
     grid-row-start: 2;
     display: initial;
+    margin-top: 36px;
   }
 
   .grid-comic{
@@ -416,6 +451,7 @@ submit {
     align-items: center;
     color: #f1f1f1;
     text-decoration: none;
+   
   }
 
   #balk {
