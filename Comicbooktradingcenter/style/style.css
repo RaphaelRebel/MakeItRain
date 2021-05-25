@@ -536,6 +536,21 @@ submit {
   
   /* BST end */
 
+
+  /* footer start */
+  footer{
+    display: flex;
+    background-color: #243B53;
+    width: 100vw;
+   display: flex;
+    
+  }
+
+  #footer-link{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  /* footer end */
   @keyframes example {
     from {
       transform: translateY(-144px);
