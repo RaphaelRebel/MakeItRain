@@ -319,6 +319,9 @@ submit {
 #overview{
   display: none;
 }
+.loadmore{
+  width:100%
+}
 
 .loadmore a{
   display: flex;
@@ -545,11 +548,7 @@ submit {
    display: flex;
     
   }
-
-  #footer-link{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
+  
   /* footer end */
   @keyframes example {
     from {

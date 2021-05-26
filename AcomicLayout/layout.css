@@ -1,0 +1,137 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-layout{
+    display: none;
+}
+
+.top-container{
+    display: flex;
+}
+
+.nav-phone-layout{
+    width: 100%;
+    height: 18px;
+    background-color: blueviolet;
+}
+
+.nav-desk-layout{
+    display: none;
+}
+
+.header-layout{
+    background-color: blue;
+    gap: 18px;
+    width: 252px;
+    height: 84px;
+    margin: 0 auto;
+    margin-top: 40.5px;
+}
+
+#button-1{
+    margin-top: 96px;
+}
+
+.button-layout{
+    margin: 0 auto;
+    width: 180px;
+    height: 63px;
+    background-color: coral;
+    margin-top: 18px;
+}
+
+.line-layout{
+    height: 4.5;
+    width: 90%;
+    background-color: violet;
+    margin: 0 auto;
+    margin-top: 258px;
+}
+
+.location-layout{
+    margin-top: 40px;
+    background-color: tomato;
+    font-size: 36px;
+}
+
+.overview-layout{
+    
+    display: none;
+}
+
+.comicgrid-layout{
+    display: grid;
+    grid-template-columns:  151px 151px;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 9px;
+}
+
+.comic-layout{
+    width: 151px;
+    height: 269px;
+    background-color: #627D9B;
+}
+
+.load-layout{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 47px;
+    background-color: teal;
+    height: 42px;
+    font-size: 36px;
+}
+
+
+.footer-layout{
+    width: 100%;
+    height: 314px;
+    background-color: thistle;
+    margin: 0;
+    padding: 0;
+    margin-top: 164px;
+}
+
+@media only screen and (min-width: 730px) {
+
+    .nav-desk-layout{
+        display: initial;
+        width: 100%;
+        height: 18px;
+        background-color: blueviolet;
+    }
+
+    .nav-phone-layout{
+        display: none;
+    }
+
+    .overview-layout{
+        display: initial;
+        background-color: teal;
+        width: 274px;
+        height: 420px;
+        margin: 9px;
+    }
+
+    .comicgrid-layout{
+        grid-template-columns: 151px 151px 151px;
+    }
+
+    .container-layout{
+        display: flex;
+    }
+
+    .buttoncontainer-layout{
+        display: flex;
+        
+    }
+
+    #button-1{
+        margin-top: 18px;
+    }
+
+}
