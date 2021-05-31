@@ -1,189 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="script/script.js" defer></script>
-    <title>Acomic</title>
-  </head>
-  <body>
-    <!-- header start -->
-    <!-- login start -->
-    
-    <!-- login end -->
-    <!-- navigator -->
-    <div id="menu-bar">
-      <div id="menu" onClick="onClickMenu()">
-        <div class="bar" id="bar1"></div>
-        <div class="bar" id="bar2"></div>
-        <div class="bar" id="bar3"></div>
-      </div>
-      <ul class="nav" id="nav" onClick="onClickMenu()">
-        <div id="phone-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/shop.html">Shop</a></li>
-          <li><a href="pages/about-us.html">About us</a></li>
-          <li><a href="pages/search.html">Search</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </div>
-      </ul>
-    </div>
-    <div id="container-nav">
-   
-    <div id="container-animate">
-      <div class="center" id="container">
-        <div id="balk">
-          <ul class="center" id="nav-text">
-            <li class="bol-outer"><a href="pages/about-us.html">About us</a></li>
-            <li class="bol-outer"><a href="pages/shop.html">Shop</a></li>
-
-            <div class="center" id="bol-inner">
-              <p><a href="index.html">Home</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+       
+        <div class="logo-layout">logo</div>
+        <div class="nav-phone-layout"> 
+            <div id="menu-bar">
+            <div id="menu" onClick="onClickMenu()">
+              <div class="bar" id="bar1"></div>
+              <div class="bar" id="bar2"></div>
+              <div class="bar" id="bar3"></div>
             </div>
-
-            <li class="bol-outer"><a href="pages/search.html">Search</a></li>
-            <li class="bol-outer"><a href="pages/contact.html">Contact</a></li>
-          </ul>
+            <ul class="nav" id="nav" onClick="onClickMenu()">
+                <div id="phone-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/about-us.html">About us</a></li>
+                    <li><a href="pages/search.html">Search</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </div>
+            </ul>
+          </div>
         </div>
-      </div>
+        <div class="nav-desk-layout">
+            
+   
+                <div id="container-animate">
+                  <div class="center" id="container">
+                    <div id="balk">
+                      <ul class="center" id="nav-text">
+                        <li class="bol-outer"><a href="pages/about-us.html">About us</a></li>
+                        <li class="bol-outer"><a href="pages/shop.html">Shop</a></li>
+            
+                        <div class="center" id="bol-inner">
+                          <p><a href="index.html">Home</a></p>
+                        </div>
+            
+                        <li class="bol-outer"><a href="pages/search.html">Search</a></li>
+                        <li class="bol-outer"><a href="pages/contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="login-layout">Login</div>
+    
+    <div class="header-layout">Acomic</div>
+
+    <div class="buttoncontainer-layout">
+        <div class="button-layout" id="button-1">Buy</div>
+        <div class="button-layout">Sell</div>
+        <div class="button-layout">Trade</div>
     </div>
-  </div>
-  <!-- eind navigator -->
-  <button id="login-button">Login</button>
-  <div id="header-container">
-  <h1 id="header-title">Acomic</h1>
-  <!-- BST start -->
-  <div id="BST-container">
-    <a href="pages/buy.html">Buy</a>
-    <div id="sell" class="BST-button"> <a href="pages/sell.html">Sell</a></div>
-    <div id="trade" class="BST-button"> <a href="pages/trade.html">Trade</a></div>
-  </div>
-  
-    <!-- BST end -->
-  </div>
-      <!-- line start -->
 
-      <div id="body-apart">
-      <div id="line-header-box">
-        <div id="line-header" class="line">
-          
-        </div>
-      </div>
-      <!-- line end -->
-      <!-- links start -->
-      <!-- <div id="links">
-        <ul>
-          <li><a>|| Recommended ||</a></li>
-          <li><a>|| Trending ||</a></li>
-          <li><a>|| Search ||</a></li>
-        </ul>
-      </div> -->
-      <div id="page"><p>Recommended</p></div>
-  </div>
-      <!-- links end -->
+    <div class="line-layout"></div>
+    <div class="location-layout">Recommended</div>
 
-      <!-- comic grid start -->
-      <div class="right">
-        <div id="overview">
-          <p>Overview</p>
-          <a href="#">Search</a>
-          <a href="#">Marvel></a>
-          <a href="#">DC></a>
-          <a href="#">Other</a>
+    <div class="container-layout">
+        <div class="overview-layout">
+            <p>Overview</p>
+            <a href="#">Search</a>
+            <a href="#">Marvel></a>
+            <a href="#">DC></a>
+            <a href="#">Other</a></div>
+        <div class="comicgrid-layout">
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
+            <div class="comic-layout">
+                <img src="images/Test.jpeg" alt="Comicbook" />
+            <p class="comic-description">Here is my awesome title!</p>
+            <p class="comic-prize">$10</p>
+            </div>
         </div>
-        <div class="grid-container">
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div class="grid-comic">
-            <img src="images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-          </div>
-          <div>
-          <div class="loadmore"><a href="#">Load more</a></div>
-          <!-- grid comic end -->
-          </div>
-        <!-- footer start -->
-        <footer style="width:100%">
-          <h2 class="footer-row-1">ACOMIC</h2>
-          <div class="footer-row-2">
-            <a href="#">
-              <p>Marvel</p>
-            </a>
-            <a href="#">
-              <p>DC</p>
-            </a>
-            <a href="#">
-              <p>Other</p>
-            </a>
-            <a href="#">
-              <p>Buy</p>
-            </a>
-            <a href="#">
-              <p>Sell</p>
-            </a>
-            <a href="#">
-              <p>Trade</p>
-            </a>
-          </div>
-          
-        </footer>
-      </div>
-      
-        <!-- footer end -->
-  </body>
+    </div>
+
+    <div class="load-layout">  <a href=""> Load more</a></div>
+    <div class="footer-layout">
+        <div class="footer-row-1">ACOMIC</div>
+        <div class="footer-row-2">
+        <a href="">Marvel</a>
+        <a href="">DC</a>
+        <a href="">Other comics</a>
+        <a href="">Sell</a>
+        <a href="">Buy</a>
+        <a href="">Trade</a>
+    </div>
+    <div class="footer-row-3">
+        <a href="">About us</a>
+        <a href="">Contact</a>
+        <a href="">Info</a>
+    </div>
+    <div class="footer-row-4">
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+        <a href="">Twitter</a>
+    </div>
+    </div>
+</body>
 </html>
