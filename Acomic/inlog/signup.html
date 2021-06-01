@@ -1,10 +1,11 @@
 <html>
     <head>
-        <link rel="stylesheet" href="///////">
+        <link rel="stylesheet" href="../style/system.css">
         <title>Hier kunt u zich aanmelden</title>
     </head>
-    <body><center>
-        <form action ="signup.php" method="POST">
+    <body>
+        <div id="container">
+        <form id="inlog" action ="signup.php" method="POST">
         <input type = "text" name = "username" placeholder = "Gebruikersnaam" required>*<br><br>
         <input type = "password" name = "password1" placeholder = "Wachtwoord" required>*<br><br>
         <input type= "password" name="password2" placeholder = "Herhaal wachtwoord" required>*<br><br>
@@ -14,5 +15,6 @@
         <input type = "hidden" name = "code" value="L1GaCPLAC/qRRDod7Oo9OxahRcRIwI">
         <input type = "submit" value = "Aanmelden">
         <p>Al een account gemaakt? <a href="../index.html">Klik hier</a> om in te loggen</p>
+    </div>
     </body>
 </html>

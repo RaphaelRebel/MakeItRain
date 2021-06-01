@@ -27,6 +27,7 @@ a{
 
 .login-layout{
     display: flex;
+    flex-direction: column;
   justify-content: center;
   align-items: center;
   float: right;
@@ -35,9 +36,9 @@ a{
   text-decoration: none;
   margin-top: -55px;
   width: 83px;
-  height: 31px;
+  height: 45px;
   border-radius: 1000px;
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 9px;
 }
 
@@ -50,7 +51,6 @@ a{
 }
 
 .header-layout{
-    gap: 18px;
     width: 252px;
     height: 84px;
     margin: 0 auto;
@@ -322,7 +322,7 @@ a{
         width: 144px;
         height: 57px;
         border-radius: 1000px;
-        font-size: 27px;
+        font-size: 18px;
     }
 
     .nav-desk-layout{
@@ -379,9 +379,11 @@ a{
       }
     
       #menu-bar {
-        display: none;
+        
         animation-name: example;
         animation-duration: 2s;
+        position: sticky;
+        top: 0;
       }
       
       
@@ -404,7 +406,7 @@ a{
         align-items: center;
         color: #f1f1f1;
         text-decoration: none;
-       
+       padding: 2px;
       }
     
       #balk {
@@ -420,7 +422,7 @@ a{
     
       #nav-text {
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
         font-size: 27px;
       }
     

@@ -1,7 +1,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="../style/logout.css">
+    <link rel="stylesheet" href="../style/system.css">
     </head>
     <body>
         <div id="container">

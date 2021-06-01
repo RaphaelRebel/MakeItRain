@@ -11,7 +11,7 @@ $username = $_POST['username'];
     <head>
         <title>Zijn dit uw juiste gegevens?</title>
     </head>
-    <body><center>
+    <body>
         <form action ="sendmail.php" method="POST">
         <input type = "text" name = "username" placeholder = "Gebruikersnaam" required>*<br><br>
         <input type = "text" name = "voornaam" placeholder = "Voornaam" required>*<br><br>

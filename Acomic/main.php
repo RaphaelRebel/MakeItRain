@@ -53,8 +53,9 @@
         </div>
         <div class="login-layout">
             <?php include("inlog/username.php") ?>
-
-    </a></div>
+            
+        </a></div>
+        
 
         
     

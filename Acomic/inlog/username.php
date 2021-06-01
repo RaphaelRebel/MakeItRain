@@ -1,19 +1,14 @@
 <?php
 session_start();
 
-// if($_SESSION['username'] == TRUE){
-//     echo $_SESSION['username'];
-// }
-// else{
-//     echo"Login";
-// }
+$_SERVER['logout'] = '<a href="inlog/logout.php">UITLOGGEN</a>';
 
 if(!isset($_SESSION['username'])){
     echo'<a href="../index.html"> Login</a>';
 }
 else{
     echo $_SESSION['username'];
-   
+    echo $_SERVER['logout'];
 }
 
 
