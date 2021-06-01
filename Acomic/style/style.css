@@ -17,6 +17,8 @@ a{
     color: #f1f1f1;
 }
 
+
+
 /* layout start */
 
 .logo-layout{
@@ -190,6 +192,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translateX(-40px);
   }
   
   .bar {
@@ -335,7 +338,7 @@ a{
 
     .overview-layout{
         display: initial;
-        background-color: teal;
+        background-color: #243B53;
         width: 274px;
         height: 420px;
         margin: 9px;
@@ -489,6 +492,7 @@ a{
         color: #f1f1f1;
         border-bottom: solid 1px black;
         font-size: 27px;
+        padding: 9px;
       }
       .overview-layout a{
         color: #f1f1f1;

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Layout</title>
-    <link rel="stylesheet" href="layout.css">
+    <title>Acomic</title>
+    <link rel="stylesheet" href="style/style.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -19,11 +20,11 @@
             </div>
             <ul class="nav" id="nav" onClick="onClickMenu()">
                 <div id="phone-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/shop.html">Shop</a></li>
-                    <li><a href="pages/about-us.html">About us</a></li>
-                    <li><a href="pages/search.html">Search</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="pages/shop.html" target="_blank">Shop</a></li>
+                    <li><a href="pages/about-us.html" target="_blank">About us</a></li>
+                    <li><a href="pages/search.html" target="_blank">Search</a></li>
+                    <li><a href="pages/contact.html" target="_blank">Contact</a></li>
                 </div>
             </ul>
           </div>
@@ -35,41 +36,47 @@
                   <div class="center" id="container">
                     <div id="balk">
                       <ul class="center" id="nav-text">
-                        <li class="bol-outer"><a href="pages/about-us.html">About us</a></li>
-                        <li class="bol-outer"><a href="pages/shop.html">Shop</a></li>
+                        <li class="bol-outer"><a href="pages/about-us.html" target="_blank">About us</a></li>
+                        <li class="bol-outer"><a href="pages/shop.html" target="_blank">Shop</a></li>
             
                         <div class="center" id="bol-inner">
-                          <p><a href="index.html">Home</a></p>
+                          <p><a href="index.html" target="_blank">Home</a></p>
                         </div>
             
-                        <li class="bol-outer"><a href="pages/search.html">Search</a></li>
-                        <li class="bol-outer"><a href="pages/contact.html">Contact</a></li>
+                        <li class="bol-outer"><a href="pages/search.html" target="_blank">Search</a></li>
+                        <li class="bol-outer"><a href="pages/contact.html" target="_blank">Contact</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
         </div>
-        <div class="login-layout">Login</div>
+        <div class="login-layout">
+            <?php include("inlog/username.php") ?>
+
+    </a></div>
+
+        
     
     <div class="header-layout">Acomic</div>
 
     <div class="buttoncontainer-layout">
-        <div class="button-layout" id="button-1">Buy</div>
-        <div class="button-layout">Sell</div>
-        <div class="button-layout">Trade</div>
+        <div class="button-layout" id="button-1"> <a href="pages/shop.html" target="_blank"> Buy</a></div>
+        <div class="button-layout"><a href="pages/sell.html" target="_blank">Sell</a></div>
+        <div class="button-layout"><a href="pages/trade.html" target="_blank">Trade</a></div>
     </div>
 
     <div class="line-layout"></div>
     <div class="location-layout">Recommended</div>
+  
 
     <div class="container-layout">
         <div class="overview-layout">
             <p>Overview</p>
-            <a href="#">Search</a>
-            <a href="#">Marvel></a>
-            <a href="#">DC></a>
-            <a href="#">Other</a></div>
+            <a href="#" target="_blank">Search</a>
+            <a href="#" target="_blank">Marvel></a>
+            <a href="#" target="_blank">DC></a>
+            <a href="#" target="_blank">Other</a></div>
         <div class="comicgrid-layout">
             <div class="comic-layout">
                 <img src="images/Test.jpeg" alt="Comicbook" />
@@ -138,22 +145,22 @@
     <div class="footer-layout">
         <div class="footer-row-1">ACOMIC</div>
         <div class="footer-row-2">
-        <a href="">Marvel</a>
-        <a href="">DC</a>
-        <a href="">Other comics</a>
-        <a href="">Sell</a>
-        <a href="">Buy</a>
-        <a href="">Trade</a>
+        <a href="" target="_blank">Marvel</a>
+        <a href="" target="_blank">DC</a>
+        <a href="" target="_blank">Other comics</a>
+        <a href="" target="_blank">Sell</a>
+        <a href="" target="_blank">Buy</a>
+        <a href="" target="_blank">Trade</a>
     </div>
     <div class="footer-row-3">
-        <a href="">About us</a>
-        <a href="">Contact</a>
-        <a href="">Info</a>
+        <a href="" target="_blank">About us</a>
+        <a href="" target="_blank">Contact</a>
+        <a href="" target="_blank">Info</a>
     </div>
     <div class="footer-row-4">
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Twitter</a>
+        <a href="" target="_blank">Facebook</a>
+        <a href="" target="_blank">Instagram</a>
+        <a href="" target="_blank">Twitter</a>
     </div>
     </div>
 </body>
