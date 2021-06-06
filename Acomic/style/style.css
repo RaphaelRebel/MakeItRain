@@ -13,7 +13,7 @@ html{
 }
 
 a{
-   
+   text-decoration: underline;
     color: #f1f1f1;
 }
 
@@ -341,8 +341,8 @@ a{
         background-color: #243B53;
         width: 274px;
         height: 420px;
-        margin: 9px;
-        margin-top: 200px;
+        margin: 18px;
+        margin-top: 50px;
     }
 
     .comicgrid-layout{

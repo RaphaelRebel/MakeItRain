@@ -1,7 +1,13 @@
 .location-layout{
-    margin-top: 274px;
-    margin-left: 700px;
-    
+    margin-top: 241px;
+    margin-left: 20%;
+}
+
+
+@media only screen and (min-width: 730px){
+    .location-layout{
+        margin-left: 36%;
+    }
 }
 
 
