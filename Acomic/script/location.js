@@ -1,15 +1,26 @@
+
+
+
 function marvelFunction() {
     document.getElementById("locate").innerHTML = "Marvel"; 
+    var marvelComic = document.getElementsByClassName("comic-image");
+    for (var i = 0; i < marvelComic.length; i+= 1){
+    marvelComic[i].src = '../images/MARVEL.jpg';}
   }
 
 function dcFunction() {
     document.getElementById("locate").innerHTML = "DC";
-    document.getElementById("comic-image").src = '../images/DC.jpeg';
+    var dcComic = document.getElementsByClassName("comic-image");
+    for (var i = 0; i < dcComic.length; i+= 1){
+    dcComic[i].src = '../images/DC.jpeg';}
 }
 
 function recommendedFunction() {
     document.getElementById("locate").innerHTML = "Recommended";
-    document.getElementById("comic-image").src = '../images/Test.jpeg';
+    var recComic = document.getElementsByClassName("comic-image");
+    for (var i = 0; i < recComic.length; i+= 1){
+    recComic[i].src = '../images/Test.jpeg';}
+    
 }
 
 function otherFunction() {

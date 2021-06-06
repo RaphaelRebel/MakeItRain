@@ -69,62 +69,62 @@
         </div>
         <div class="comicgrid-layout">
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>
             <div class="comic-layout">
-                <img id="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
+                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
             <p class="comic-description">Here is my awesome title!</p>
             <p class="comic-prize">$10</p>
             </div>

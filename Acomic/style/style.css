@@ -17,6 +17,9 @@ a{
     color: #f1f1f1;
 }
 
+a:hover{
+  cursor: pointer;
+}
 
 
 /* layout start */
