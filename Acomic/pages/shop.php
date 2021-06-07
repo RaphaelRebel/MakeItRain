@@ -22,9 +22,9 @@
             <div id="phone-nav">
                 <li><a href="../main.php" target="_blank">Home</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="pages/about-us.html" target="_blank">About us</a></li>
-                <li><a href="pages/search.html" target="_blank">Search</a></li>
-                <li><a href="pages/contact.html" target="_blank">Contact</a></li>
+                <li><a href="about-us.html" target="_blank">About us</a></li>
+                <li><a href="search.html" target="_blank">Search</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
             </div>
         </ul>
       </div>
@@ -36,15 +36,15 @@
               <div class="center" id="container">
                 <div id="balk">
                   <ul class="center" id="nav-text">
-                    <li class="bol-outer"><a href="pages/about-us.html" target="_blank">About us</a></li>
+                    <li class="bol-outer"><a href="about-us.html" target="_blank">About us</a></li>
                     <li class="bol-outer"><a href="#">Shop</a></li>
         
                     <div class="center" id="bol-inner">
                       <p><a href="../main.php" target="_blank">Home</a></p>
                     </div>
         
-                    <li class="bol-outer"><a href="pages/search.html" target="_blank">Search</a></li>
-                    <li class="bol-outer"><a href="pages/contact.html" target="_blank">Contact</a></li>
+                    <li class="bol-outer"><a href="search.html" target="_blank">Search</a></li>
+                    <li class="bol-outer"><a href="contact.html" target="_blank">Contact</a></li>
                   </ul>
                 </div>
               </div>

@@ -19,6 +19,7 @@ a{
 
 a:hover{
   cursor: pointer;
+  
 }
 
 
@@ -122,9 +123,13 @@ a:hover{
 .comic-layout{
     width: 144px;
     height: 269px;
-    background-color: #627D9B;
+    /* background-color: #627D9B; */
     margin-top: 45px;
     padding: 0;
+}
+
+.comic-prize{
+  padding-bottom: 9px;
 }
 
 .load-layout{
