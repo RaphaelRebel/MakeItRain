@@ -27,5 +27,5 @@ function otherFunction() {
     document.getElementById("locate").innerHTML = "Other";
     var otherComic = document.getElementsByClassName("comic-image");
     for (var i = 0; i < otherComic.length; i+= 1){
-    otherComic[i].src = '../images/Other.jpg';}
+    otherComic[i].src = '../images/Test.jpeg';}
 }

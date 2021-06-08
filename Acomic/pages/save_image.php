@@ -1,11 +1,8 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$pass = "root";
-$db = "flex";
-$con = mysqli_connect('localhost', 'root', 'root');
-mysqli_select_db($con, 'comics');
+
+//$conn = mysqli_connect('localhost', 'root', 'root');
+//mysqli_select_db($conn, 'comics');
 // save_image.php
 
 // In deze array slaan we alle fouten op die er zijn
@@ -42,12 +39,11 @@ switch ($file_error) {
 if (count($errors) === 0) {
     // De bestandsnaam staat in de key: name
     $file_name = $_FILES['image']['name'];
-    $file_title = $_POST['title'];
-    $file_prize = $_POST['prize'];
+    $title = $_POST['title'];
+    $prize = $_POST['prize'];
 
     // Grootte in bytes staat in de key: size
     $file_size = $_FILES['image']['size'];
-
     // De tijdelijke opslag plek staat de key: temp_name
     $file_tmp = $_FILES['image']['tmp_name'];
 
@@ -62,7 +58,7 @@ if (count($errors) === 0) {
         2 => 'jpg',
         3 => 'png'
     ];
-    $image_type        = exif_imagetype($file_tmp);
+    $image_type = exif_imagetype($file_tmp);
     if ($image_type !== false) {
         // Juiste extensie opzoeken, die gaan we zo gebruiken bij het maken van de nieuwe bestandsnaam
         $file_extension = $valid_image_types[$image_type];
@@ -85,14 +81,29 @@ if (count($errors) === 0) {
     move_uploaded_file($file_tmp, $final_filename); // dus van tijdelijke bestandsnaam naar de originele naam (in de huidige map);
 
     // Op deze plek sla je de bestandsnaam en andere gegevens op in je database, dat mag je zelf doen.
-    $data = [
-          'image' => $file_name,
-          'title' => $file_title,
-          'prize' => $file_prize,
-        ];
-   $sql = "INSERT INTO `comics` (`image`, `title`, `prize`) VALUES (:image, :title, :prize)";
-   $statement = $con->prepare($sql);
-   $statement->execute($data);
+    try {
+        $mysqli = new mysqli("localhost", "root", "root", "comics"); // aanpassen voor MA-cloud
+
+        if ($mysqli->connect_errno) {
+            echo "Failed to connect to MySQL: " . $mysqli->connect_error;
+            exit();
+        }
+
+        // $data = [
+        //     'image' => $file_name,
+        //     'title' => $title,
+        //     'prize' => $prize
+        // ];
+
+        $sql = "INSERT INTO `comics` (`image`, `title`, `prize`) VALUES ('$new_filename', '$title', '$prize')";
+
+        $result = $mysqli->query($sql);
+        $mysqli->close();
+    } catch (PDOException $e) {
+        echo "ERROR IN INSERTING DATA! : " . $e->getMessage();
+    }
+    
+
 
     // Stuur de gebruiker door naar een andere pagina
     header('Location: ../main.php');

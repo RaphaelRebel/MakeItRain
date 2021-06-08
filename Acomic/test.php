@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<link rel="stylesheet" href="style.css">
 
 <?php
  $dbhost = "localhost";
@@ -14,13 +14,14 @@
  $user = "root";
  $pass = "root";
 
- $con = mysqli_connect('localhost', 'root', 'root');
- mysqli_select_db($con, 'comics');
+ $conn = mysqli_connect('localhost', 'root', 'root');
+ mysqli_select_db($conn, 'comics');
 
 
- $pagesize = 5;
+
+ $pagesize = 12;
  $sql = 'SELECT * FROM comics';
- $result = mysqli_query($con, $sql);
+ $result = mysqli_query($conn, $sql);
  $number_of_results = mysqli_num_rows($result);
 
 $number_of_pages = ceil($number_of_results / $pagesize);
@@ -36,21 +37,22 @@ else {
 $offset = ($page - 1) * $pagesize;
 
 $sql = "SELECT * FROM comics LIMIT " . $offset . ', ' . $pagesize;
-$result = mysqli_query($con, $sql);
+$result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_array($result)) {
-  echo '<div class="comic-layout">'. '<img src="uploads/' . $row['image'].'"'.' ' . $row['title'] . $row['prize'] .'</div></br>';
+  echo '<div class="comic-layout">'. '<img class="comic-image" src="pages/uploads/' . $row['image'].'"'.' ' .'<p class="comic-description">'. $row['title'] .'</p>'. '<p class="comic-prize">$ '.$row['prize'].'</p>' .'</div></br>';
 }
 
 
 
  for ($page = 1; $page<=$number_of_pages;$page++) {
-   echo '<a href="index.php?page=' .$page. '">'.$page.'</a>';
+   echo '<a href="main.php?page=' .$page. '">'.$page.'</a>';
  }
 
 
 
 
 ?>
+
 </body>
 </html>
