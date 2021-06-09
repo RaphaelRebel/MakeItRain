@@ -75,7 +75,7 @@ if (count($errors) === 0) {
 
     // Random bestandsnaam genereren, om dubbele bestanden te voorkomen.
     $new_filename   = sha1_file($file_tmp) . '.' . $file_extension;
-    $final_filename = 'uploads/' . $new_filename;
+    $final_filename = '../uploads/' . $new_filename;
 
     // met move_uploaded_file verplaats je het tijdelijke bestand naar de uiteindelijke plek
     move_uploaded_file($file_tmp, $final_filename); // dus van tijdelijke bestandsnaam naar de originele naam (in de huidige map);

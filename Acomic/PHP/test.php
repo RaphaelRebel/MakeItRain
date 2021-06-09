@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+
 
 <?php
  $dbhost = "localhost";
@@ -40,13 +32,13 @@ $sql = "SELECT * FROM comics LIMIT " . $offset . ', ' . $pagesize;
 $result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_array($result)) {
-  echo '<div class="comic-layout">'. '<img class="comic-image" src="pages/uploads/' . $row['image'].'"'.' ' .'<p class="comic-description">'. $row['title'] .'</p>'. '<p class="comic-prize">$ '.$row['prize'].'</p>' .'</div></br>';
+  echo '<div class="comic-layout">'. '<img class="comic-image" src="../uploads/' . $row['image'].'"/>'.' ' .'<p class="comic-description">'. $row['title'] .'</p>'. '<p class="comic-prize">$ '.$row['prize'].'</p>' .'</div>';
 }
 
 
 
  for ($page = 1; $page<=$number_of_pages;$page++) {
-   echo '<a href="main.php?page=' .$page. '">'.$page.'</a>';
+   echo '<a class="load-layout" href="../main.php?page=' .$page. '">'.$page.'</a>';
  }
 
 
@@ -54,5 +46,3 @@ while ($row = mysqli_fetch_array($result)) {
 
 ?>
 
-</body>
-</html>

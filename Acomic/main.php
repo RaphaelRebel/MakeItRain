@@ -65,7 +65,7 @@
 
     <div class="buttoncontainer-layout">
         <div class="button-layout" id="button-1"> <a href="pages/shop.php" target="_blank"> Buy</a></div>
-        <div class="button-layout"><a href="pages/sell.html" target="_blank">Sell</a></div>
+        <div class="button-layout"><a href="pages/sell.php" target="_blank">Sell</a></div>
         <div class="button-layout"><a href="pages/trade.html" target="_blank">Trade</a></div>
     </div>
 
@@ -83,70 +83,11 @@
             <a onclick="otherFunction()" target="_blank">Other</a>
         </div>
         <div class="comicgrid-layout">
-        <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
-            <div class="comic-layout">
-                <img class="comic-image" src="../images/Test.jpeg" alt="Comicbook" />
-            <p class="comic-description">Here is my awesome title!</p>
-            <p class="comic-prize">$10</p>
-            </div>
+            <?php include("PHP/test.php") ?>
+</div>
         </div>
-    </div>
 
-    <div class="load-layout">  <a href=""> Load more</a></div>
+    <div class="load-layout"></div>
     <div class="footer-layout">
         <div class="footer-row-1">ACOMIC</div>
         <div class="footer-row-2">
