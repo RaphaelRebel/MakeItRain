@@ -322,6 +322,13 @@ a:hover{
 
     .logo-layout{
         display: initial;
+        
+    }
+
+    .logo-layout img{
+      max-width: 200px;
+        height: auto;
+        
     }
 
     .login-layout{

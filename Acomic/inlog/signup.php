@@ -16,14 +16,15 @@
     $email = $_POST['email'];
     $hash = password_hash($password1, PASSWORD_DEFAULT);
 
+    $id =
     
-    $mysqli = new mysqli("localhost","root","root","flex"); // aanpassen voor MA-cloud
+    $mysqli = new mysqli("localhost","root","root","comics"); // aanpassen voor MA-cloud
     
     if ($mysqli -> connect_errno) {
       echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
       exit();
     }
-    $sql = "INSERT INTO `users` (`id`, `username`, `password`, `email`, `voornaam`, `achternaam`) VALUES (NULL, '".$username."', '".$hash."', '".$email."', '".$voornaam."', '".$achternaam."');";
+    $sql = "INSERT INTO `users` (`username`, `password`, `email`, `voornaam`, `achternaam`) VALUES ('".$username."', '".$hash."', '".$email."', '".$voornaam."', '".$achternaam."');";
     $result = $mysqli -> query($sql);
 
 

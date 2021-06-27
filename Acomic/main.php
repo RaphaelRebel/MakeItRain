@@ -12,7 +12,7 @@
 </head>
 <body>
        
-        <div class="logo-layout">logo</div>
+        <div class="logo-layout"><img src="images/acomicLogo.png" alt="acomicLogo"></div>
         <div class="nav-phone-layout"> 
             <div id="menu-bar">
             <div id="menu" onClick="onClickMenu()">
@@ -71,7 +71,7 @@
 
     <div class="line-layout"></div>
     <div class="location-layout"><p id="locate">Recommended</p></div>
-  
+    
 
     <div class="container-layout">
     <div class="overview-layout">

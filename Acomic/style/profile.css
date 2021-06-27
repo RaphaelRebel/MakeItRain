@@ -1,0 +1,35 @@
+.logo-layout{
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+   
+}
+.logo-layout img{
+    width: 70%;
+    height: auto;
+}
+
+#name-layout{
+    width: 100%;
+    height: 72px;
+    background-color: lavender;
+    margin-top: 45px;
+    margin-bottom: 69px;
+}
+
+#prof-img-layout{
+    width: 200px;
+    height: 250px;
+    background-color: lawngreen;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+#information-layout{
+    width: 180px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+}

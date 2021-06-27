@@ -1,4 +1,5 @@
-
+<link rel="stylesheet" href="../style/popup.css">
+<script src="../script/popup.js"></script>
 
 <?php
  $dbhost = "localhost";
@@ -8,8 +9,6 @@
 
  $conn = mysqli_connect('localhost', 'root', 'root');
  mysqli_select_db($conn, 'comics');
-
-
 
  $pagesize = 12;
  $sql = 'SELECT * FROM comics';
@@ -32,7 +31,7 @@ $sql = "SELECT * FROM comics LIMIT " . $offset . ', ' . $pagesize;
 $result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_array($result)) {
-  echo '<div class="comic-layout">'. '<img class="comic-image" src="../uploads/' . $row['image'].'"/>'.' ' .'<p class="comic-description">'. $row['title'] .'</p>'. '<p class="comic-prize">$ '.$row['prize'].'</p>' .'</div>';
+  echo '<div class="comic-layout">'. '<img class="comic-image" src="../uploads/' . $row['image'].'"/>'.' ' .'<p class="comic-description">'. $row['title'] .'</p>'. '<p class="comic-prize">$ '.$row['prize'].'<br/><a href="details.php?comicid='.$row['id'].'">Go to Comic</a> </p>' .'</div>';
 }
 
 

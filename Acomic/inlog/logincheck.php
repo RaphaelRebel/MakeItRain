@@ -14,7 +14,7 @@ session_start();
     $host = "localhost";
     $user = "root";
     $pass = "root";
-    $db = "flex";
+    $db = "comics";
 
     $mysqli = new mysqli($host,$user,$pass,$db);
     if ($mysqli -> connect_errno)
@@ -32,6 +32,7 @@ session_start();
     } 
 
    $gebruiker = $result -> fetch_assoc();
+   $gebruikersID = $gebruiker['id'];
    $wachtwoord_juist = password_verify($wachtwoord, $gebruiker['password']);
     $result  -> free_result();
     $mysqli -> close();
@@ -40,8 +41,10 @@ session_start();
     
     if($wachtwoord_juist == TRUE)
     {
+        session_start();
     //    echo "Je bent ingelogd<hr>";
        $_SESSION['username'] = $gebruikersnaam;
+       $_SESSION['iduser'] = $gebruikersID;
     //    echo "Klik <a href ='../main.php'>hier</a> om naar de volgende beveiligde site te gaan";  
     echo "<script> location.href='../main.php'; </script>";
         exit; 

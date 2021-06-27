@@ -37,13 +37,13 @@ switch ($file_error) {
 // Alleen verder gaan als er nog geen fouten zijn
 // Met count() tel je het aantal elementen in een array
 if (count($errors) === 0) {
-    session_start();
     // De bestandsnaam staat in de key: name
     $file_name = $_FILES['image']['name'];
     $title = $_POST['title'];
     $prize = $_POST['prize'];
-    
-    $iduser = $_SESSION['iduser'];
+    $seller = $_POST['seller'];
+
+    $iduser = $_POST['iduser'];
 
     // Grootte in bytes staat in de key: size
     $file_size = $_FILES['image']['size'];
@@ -71,6 +71,8 @@ if (count($errors) === 0) {
    
     }
 }
+
+  
 
 if ($file_size > 2097152) {
     $errors[] = 'Het bestand moet kleiner zijn dan 2 MB';
@@ -100,7 +102,7 @@ if (count($errors) === 0) {
         //     'prize' => $prize
         // ];
 
-        $sql = "INSERT INTO `comics` (`image`, `title`, `prize`, `seller`) VALUES ('$new_filename', '$title', '$prize', '$iduser')";
+        $sql = "INSERT INTO `comics` (`image`, `title`, `prize` `seller`) VALUES ('$new_filename', '$title', '$prize', '$iduser')";
 
         $result = $mysqli->query($sql);
         $mysqli->close();
