@@ -1,0 +1,17 @@
+.container-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #243B53;
+    width: 461px;
+    height: auto;
+    margin: 0 auto;
+    padding: 9px;
+    font-size: 27px;
+}
+
+.container-detail img{
+    width: 300px;
+    height: auto;
+}

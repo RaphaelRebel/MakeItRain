@@ -10,7 +10,7 @@
     <title>Comicbook shop</title>
 </head>
 <body>
-    <div class="logo-layout">logo</div>
+<div class="logo-layout"><img src="../images/acomicLogo.png" alt="acomicLogo"></div>
     <div class="nav-phone-layout"> 
         <div id="menu-bar">
         <div id="menu" onClick="onClickMenu()">
@@ -68,7 +68,7 @@
             <a onclick="otherFunction()" target="_blank">Other</a>
         </div>
         <div class="comicgrid-layout">
-        <?php include('../PHP/test.php')?>
+        <?php include('../PHP/shop.php')?>
         </div>
     </div>
 

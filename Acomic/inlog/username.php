@@ -6,11 +6,11 @@
 <?php
 session_start();
 
-$_SERVER['logout'] = '<a href="../inlog/logout.php">LOGOUT</a>';
-$_SERVER['profile'] = '<a id="name" href="../pages/profile.php">Profile</a>';
+$_SERVER['logout'] = '<a href="inlog/logout.php">LOGOUT</a>';
+$_SERVER['profile'] = '<a id="name" href="pages/profile.php">Profile</a>';
 
 if(!isset($_SESSION['username'])){
-    echo'<a href="../index.html"> Login</a>';
+    echo'<a href="index.html"> Login</a>';
 }
 else{
     echo $_SESSION['username'];

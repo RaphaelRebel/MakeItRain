@@ -84,7 +84,7 @@
         </div>
         <div class="comicgrid-layout">
             <?php include("PHP/test.php") ?>
-</div>
+        </div>
         </div>
 
     <div class="load-layout"></div>

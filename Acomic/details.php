@@ -1,9 +1,18 @@
+<html>
+<head>
+<title>Details</title>
+
+
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/details.css">
+</head>
 <?php
+
 $comicid = $_GET["comicid"];
 
 //Connect naar de Database
 $conn = mysqli_connect('localhost', 'root', 'root');
-mysqli_select_db($conn, 'comics');
+ mysqli_select_db($conn, 'comics');
 
 //Haal alle gegevens van deze comic uit de database met als comicID $comicID
 $sql = "SELECT * FROM comics WHERE id ='$comicid'";
@@ -18,10 +27,13 @@ $Comic = $result->fetch_assoc();
 $ComicTitle = $Comic['title'];
 $ComicSellerID = $Comic['seller'];
 $ComicPrize = $Comic['prize'];
-echo $ComicTitle ."<br/>";
+$ComicImage = $Comic['image'];
+
+echo  '<div class="container-detail"> <h2>Title: </h2>' . $ComicTitle .'<br/>';
+echo '<img src="uploads/'.$ComicImage.'">';
 // echo $ComicSellerID."<br/>";
-echo $ComicPrize."<br/>";
-echo '-';
+echo '<h2>Prize: </h2>'.'$ '.$ComicPrize."<br/>";
+echo '<h2>Email: </h2>-';
 
 
 //Haal alle gegevens van de seller van deze comic uit de database met als ID $ComicSeller
@@ -37,7 +49,14 @@ $resultUser2 = $resultUser->fetch_assoc();
 $UserEmail = $resultUser2['email'];
 $UserName = $resultUser2['username'];
 echo $UserEmail ."<br/>";
-echo $UserName;
+echo '<h2>Username: </h2>'.$UserName ;
+
+echo '<a href="mailto:'.$UserEmail.'"<button>E-Mail the user</a>
+<a href="main.php">Go back</a>
+</div> ';
+
 
 
 ?>
+
+</html>

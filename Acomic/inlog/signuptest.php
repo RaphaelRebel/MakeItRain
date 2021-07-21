@@ -1,19 +1,12 @@
 <?php
-
-
-//$conn = mysqli_connect('localhost', 'root', 'root');
-//mysqli_select_db($conn, 'comics');
-// save_image.php
-
-// In deze array slaan we alle fouten op die er zijn
 $errors = [];
 
-//Checken of er wel een bestand is geupload
-if (!isset($_FILES['image'])) {
+
     echo 'Geen bestand geupload!';
-    
+    $username = $_POST['username'];
+    echo $username;
     exit;
-}
+
 
 
 
@@ -41,9 +34,13 @@ if (count($errors) === 0) {
     session_start();
     // De bestandsnaam staat in de key: name
     $file_name = $_FILES['image']['name'];
-    $title = $_POST['title'];
-    $prize = $_POST['prize'];
-    $iduser = $_SESSION['iduser'];
+    $username = $_POST['username'];
+    $password1 = $_POST['password1'];
+    $password2 = $_POST['password2'];
+    $voornaam = $_POST['voornaam'];
+    $achternaam = $_POST['achternaam'];
+    $email = $_POST['email'];
+    $hash = password_hash($password1, PASSWORD_DEFAULT);
 
     // Grootte in bytes staat in de key: size
     $file_size = $_FILES['image']['size'];
@@ -100,7 +97,7 @@ if (count($errors) === 0) {
         //     'prize' => $prize
         // ];
 
-        $sql = "INSERT INTO `comics` (`image`, `title`, `prize`, `seller`) VALUES ('$new_filename', '$title', '$prize', '$iduser')";
+        $sql = "INSERT INTO `users` (`username`, `password`, `email`, `voornaam`, `achternaam`, `image`) VALUES ('".$username."', '".$hash."', '".$email."', '".$voornaam."', '".$achternaam."', '".$new_filename."');";
 
         $result = $mysqli->query($sql);
         $mysqli->close();
@@ -114,26 +111,14 @@ if (count($errors) === 0) {
     header('Location: ../main.php');
     exit;
 }
+//////////////////////////////
+    
+   
+    $sql = "INSERT INTO `users` (`username`, `password`, `email`, `voornaam`, `achternaam`) VALUES ('".$username."', '".$hash."', '".$email."', '".$voornaam."', '".$achternaam."');";
+    $result = $mysqli -> query($sql);
 
 
-
-
-
-
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
+    $mysqli -> close();
+    echo"U kunt <a href='../index.html'>hier</a> inloggen op de website";
+    echo "<script> location.href='../main.php'; </script>";
+    ?>
