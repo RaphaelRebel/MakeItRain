@@ -8,7 +8,7 @@
 </head>
 <?php
 
-$comicid = $_GET["comicid"];
+$comicid = $_GET["userid"];
 
 //Connect naar de Database
 $conn = mysqli_connect('localhost', 'root', 'root');
